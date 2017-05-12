@@ -68,6 +68,7 @@ export var masterFirebaseConfig = {
 ## Known Bugs
 > No :bug:
 > :ant: Contact page: mail form is non-functional by design.
+> :ant: Images: here is no default image if a user does not upload an image. Functioning as designed.
 > :beetle: Top Nav: Home link wrong color.
 > :beetle: Contact page: icons non-displaying as expected.
 
