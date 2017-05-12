@@ -1,0 +1,21 @@
+{
+  "name": "always-for-the-beter",
+  "description": "Epicodus Javascript Project using AngularJS, Node.js, JavaScript, NPM, Foundation, Firebase, CSS, SCSS, and good ol' HTML.",
+  "main": "",
+  "authors": [
+    "Grace Stuart <gstuart@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sites": "^6.3.1"
+  }
+}
