@@ -66,7 +66,10 @@ export var masterFirebaseConfig = {
 ```
 
 ## Known Bugs
-> No known :bug:, :beetle:, or :ant:.
+> No :bug:
+> :ant: Contact page: mail form is non-functional by design.
+> :beetle: Top Nav: Home link wrong color.
+> :beetle: Contact page: icons non-displaying as expected.
 
 ## Planning
 1. Configuration/dependencies
