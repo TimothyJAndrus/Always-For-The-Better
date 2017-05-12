@@ -8,11 +8,13 @@ import { HomeComponent } from './home/home.component';
 import { routing } from './app.routing';
 import { ContactComponent } from './contact/contact.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+  
   ],
   imports: [
     BrowserModule,

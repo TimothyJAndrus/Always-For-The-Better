@@ -12,6 +12,10 @@ const appRoutes: Routes = [
   {
     path: 'contact',
     component: ContactComponent
+  },
+  {
+    path: 'user',
+    component: UserComponent
   }
 ];
 
