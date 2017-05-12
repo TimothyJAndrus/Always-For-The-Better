@@ -14,10 +14,6 @@ const appRoutes: Routes = [
     component: ContactComponent
   },
   {
-    path: 'user',
-    component: UserComponent
-  },
-  {
     path: 'mentor',
     component: MentorComponent
   }
