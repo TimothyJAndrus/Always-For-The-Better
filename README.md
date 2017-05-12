@@ -82,8 +82,8 @@ export var masterFirebaseConfig = {
   * new-animal.component for creating a new animal object.
   * edit-animal for editing an existing animals.
 
-   ![UX](/src/resources/img/planning1.jpg)
-   ![Back End](/src/resources/img/planning2.jpg)
+   ![UX](/src/assets/img/planning1.jpg)
+   ![Back End](/src/assets/img/planning2.jpg)
 
 3. UX/UI
   * Foundation was used as the page templates and animations.
