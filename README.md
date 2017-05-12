@@ -31,8 +31,8 @@ You first will need the following things properly installed on your computer.
  * [Bower](https://bower.io/)
 
 With the above items installed you may now do the following in your terminal:
- * `git clone https://github.com/gstuart/adventureAngular`
- * `cd adventureAngular` :file_folder:
+ * `git clone https://github.com/gstuart/Always-For-The-Better`
+ * `cd always-for-the-better` :file_folder:
  * `npm install`, enjoy :coffee:, :beer:,  or :smoking: while waiting
  * `npm install bower`
 
@@ -47,7 +47,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
  Before running the tests make sure you are serving the app via `ng serve`.
 
 ## Usage
-* **Option One:** visit [Shipwrecked](https://shipwrecked-17de2.firebaseapp.com/)
+* **Option One:** visit [Always For The Better](https://shipwrecked-17de2.firebaseapp.com/)
 * **Option Two:**
   * `ng serve`
   * :eyes: app at [http://localhost:4200](http://localhost:4200) :tada:
