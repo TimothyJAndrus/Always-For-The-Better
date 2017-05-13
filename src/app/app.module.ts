@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { routing } from './app.routing';
 import { ContactComponent } from './contact/contact.component';
 import { MentorComponent } from './mentor/mentor.component';
+import { UserDetailComponent } from './user-detail/user-detail.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { MentorComponent } from './mentor/mentor.component';
     HomeComponent,
     ContactComponent,
     MentorComponent,
+    UserDetailComponent,
   ],
   imports: [
     BrowserModule,

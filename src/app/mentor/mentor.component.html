@@ -3,6 +3,6 @@
 </div>
 <div class="row medium-up-3 large-up-4">
   <div class="column" *ngFor="let user of users">
-    <img class="thumbnail" alt= "user portrait" src="{{user.image}}">
+    <img class="thumbnail" alt= "user portrait" (click)="goToDetailPage(user)" src="{{user.image}}">
   </div>
 </div>
