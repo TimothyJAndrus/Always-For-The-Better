@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { User } from '../user.model';
 import { Router } from '@angular/router';
 import { UserService } from '../user.service';
+import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-mentor',
@@ -11,7 +12,7 @@ import { UserService } from '../user.service';
 })
 
 export class MentorComponent implements OnInit {
-  users: User[];
+  users: FirebaseListObservable<any[]>;
 
   constructor(private router: Router, private userService: UserService) {}
 
