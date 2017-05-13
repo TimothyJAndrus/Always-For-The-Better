@@ -11,6 +11,7 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AccountComponent } from './account/account.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -26,6 +27,7 @@ export const firebaseConfig = {
     ContactComponent,
     MentorComponent,
     UserDetailComponent,
+    AccountComponent,
   ],
   imports: [
     BrowserModule,

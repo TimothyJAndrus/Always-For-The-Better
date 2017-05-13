@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { MentorComponent } from './mentor/mentor.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
+import { AccountComponent } from './account/account.component';
 
 const appRoutes: Routes = [
   {
@@ -21,6 +22,10 @@ const appRoutes: Routes = [
   {
     path: 'user/:id',
     component: UserDetailComponent
+  },
+  {
+    path: 'account',
+    component: AccountComponent
   }
 ];
 
