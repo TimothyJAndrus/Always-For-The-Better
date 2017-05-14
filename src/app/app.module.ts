@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { routing } from './app.routing';
 import { ContactComponent } from './contact/contact.component';
-import { MentorComponent } from './mentor/mentor.component';
+import { UserComponent } from './user/user.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
@@ -25,7 +25,7 @@ export const firebaseConfig = {
     AppComponent,
     HomeComponent,
     ContactComponent,
-    MentorComponent,
+    UserComponent,
     UserDetailComponent,
     AccountComponent,
   ],
