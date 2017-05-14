@@ -16,7 +16,7 @@ import { AccountComponent } from './account/account.component';
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
   authDomain: masterFirebaseConfig.authDomain,
-  databaseURL:masterFirebaseConfig.databaseURL,
+  databaseURL: masterFirebaseConfig.databaseURL,
   storageBucket: masterFirebaseConfig.storageBucket
 };
 

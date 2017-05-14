@@ -1,3 +1,11 @@
+// Defining values
+@mixin breakpoint {
+  $small: (0em, 40em);       /* 0, 640px */
+  $medium: (40.063em, 64em);  /* 641px, 1024px */
+  $large: (64.063em, 90em);  /* 1025px, 1440px */
+  $xlarge: (90.063em, 120em); /* 1441px, 1920px */
+  $xxlarge: (120.063em);       /* 1921px */
+}
 $body-background: #ffffff;
 $light-gray: light-gray;
 $contact-us-section-padding: 2rem;
