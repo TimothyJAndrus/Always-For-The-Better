@@ -19,6 +19,7 @@ export class AccountComponent implements OnInit {
     if(image === "") {
       image = "../assets/img/default-image.jpg";
     }
+    
     var newUser: User = new User(name, title, image, linkedin, bio, mentor, mentee);
     this.userService.addUser(newUser);
   }
