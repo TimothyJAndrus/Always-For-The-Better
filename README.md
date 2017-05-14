@@ -1,4 +1,4 @@
-![Banner Image](/src/resources/img/mentoring.jpg)
+![Banner Image](/src/assets/img/mentoring.jpg)
 # Always For The Better
  [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg)](https://github.com/RichardLitt/standard-readme)
 ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
@@ -66,7 +66,7 @@ export var masterFirebaseConfig = {
 ```
 
 ## Known Bugs
-> :bug: Account: checkboxes are being saved as "on", not "true/false" no matter if they are checked or left empty. 
+> :bug: Account: checkboxes are being saved as "on", not "true/false" no matter if they are checked or left empty.
 > :ant: Contact page: mail form is non-functional by design.
 > :ant: Home: More and Less buttons are functioning as toggles, and not changing color when clicked.
 > :beetle: Top Nav: Home link wrong color.
