@@ -13,7 +13,7 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 })
 
 export class UserDetailComponent implements OnInit {
-  userId: number;
+  userId: string;
   userToDisplay;
 
   constructor(

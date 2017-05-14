@@ -19,7 +19,7 @@ export class UserService {
     this.users.push(newUser);
   }
 
-  getUserById(userId: number) {
+  getUserById(userId: string) {
     return this.database.object('users/' + userId);
   }
 

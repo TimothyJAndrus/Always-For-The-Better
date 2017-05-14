@@ -20,6 +20,14 @@ const appRoutes: Routes = [
     component: UserComponent
   },
   {
+    path: "mentors",
+    component: UserComponent
+  },
+  {
+    path: "mentees",
+    component: UserComponent
+  },
+  {
     path: 'user/:id',
     component: UserDetailComponent
   },

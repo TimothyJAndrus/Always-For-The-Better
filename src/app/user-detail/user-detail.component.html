@@ -1,3 +1,7 @@
 <p>
-  {{userToDisplay.name}}
+  {{(userToDisplay | async)?.name}}
+  {{(userToDisplay | async)?.title}}
+  {{(userToDisplay | async)?.bio}}
+  {{(userToDisplay | async)?.linkedin}}
+  {{(userToDisplay | async)?.image}}
 </p>
