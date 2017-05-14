@@ -3,6 +3,7 @@ import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { User } from '../user.model';
 import { UserService } from '../user.service';
+import { FirebaseObjectObservable } from 'angularfire2/database';
 
 @Component({
   selector: 'app-user-detail',
@@ -12,14 +13,18 @@ import { UserService } from '../user.service';
 })
 
 export class UserDetailComponent implements OnInit {
-  userId: number = null;
-  userToDisplay: User;
+  userId: number;
+  userToDisplay;
 
-  constructor(private route: ActivatedRoute, private location: Location, private userService: UserService) { }
+  constructor(
+    private route: ActivatedRoute,
+    private location: Location,
+    private userService: UserService
+  ) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-      this.userId = parseInt(urlParameters['id']);
+      this.userId = urlParameters['id'];
     });
     this.userToDisplay = this.userService.getUserById(this.userId);
   }

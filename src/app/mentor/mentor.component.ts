@@ -21,6 +21,6 @@ export class MentorComponent implements OnInit {
   }
 
   goToDetailPage(clickedUser: User) {
-    this.router.navigate(['users', clickedUser.id]);
+    // this.router.navigate(['users', clickedUser.id]);
   };
 }

@@ -6,8 +6,7 @@ export class User {
     public linkedin: string,
     public bio: string,
     public mentor: boolean,
-    public mentee: boolean,
-    public id: number
+    public mentee: boolean
   )
   { }
 }

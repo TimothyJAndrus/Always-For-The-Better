@@ -15,12 +15,12 @@ export class UserService {
     return this.users;
   }
 
+  addUser(newUser: User) {
+    this.users.push(newUser);
+  }
+
   getUserById(userId: number) {
-    for (var i = 0; i <= USERS.length - 1; i++) {
-      if (USERS[i].id === userId) {
-        return USERS[i];
-      }
-    }
+    return this.database.object('users/' + userId);
   }
 
 }
