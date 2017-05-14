@@ -1,3 +1,5 @@
+$white : #ffffff;
+$primary-color : #000000;
 .floated-label-wrapper {
   position: relative;
 
@@ -15,8 +17,8 @@
     z-index: -1;
 
     input[type=text],
-    input[type=email],
-    input[type=password] {
+    input[type=image],
+    input[type=checkbox] {
       border-radius: 4px;
       font-size: 1.75em;
       padding: 0.5em;
