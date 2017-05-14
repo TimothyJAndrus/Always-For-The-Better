@@ -1,7 +1,71 @@
-<p>
-  {{(userToDisplay | async)?.name}}
-  {{(userToDisplay | async)?.title}}
-  {{(userToDisplay | async)?.bio}}
-  {{(userToDisplay | async)?.linkedin}}
-  {{(userToDisplay | async)?.image}}
-</p>
+<div class="row">
+  <div class="card profile-card-action-icons">
+    <div class="card-section">
+      <div class="profile-card-header">
+        <div class="profile-card-avatar">
+          <img class="avatar-image" src="{{(userToDisplay | async)?.image}}" alt="users name">
+        </div>
+        <div class="profile-card-author">
+          <h5 class="author-title">{{(userToDisplay | async)?.name}}</h5>
+          <p class="author-description">{{(userToDisplay | async)?.title}}</p>
+        </div>
+      </div>
+      <div class="profile-card-about">
+        <h5 class="about-title separator-left">About Me</h5>
+        <p class="about-content">
+          {{(userToDisplay | async)?.bio}}
+        </p>
+        <div class="row about-skills">
+          <div class="small-6 columns">
+            <h4>Needs</h4>
+            <ul class="arrow">
+              <li>Coding</li>
+              <li>Cricket</li>
+              <li>Enjoying</li>
+            </ul>
+          </div>
+          <div class="small-6 columns">
+            <h4>Offerings</h4>
+            <ul class="arrow">
+              <li>Maths</li>
+              <li>Dancing</li>
+              <li>Smiling</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="profile-card-action">
+      <div class="action-area">
+        <a href="#" class="action-anchor has-tip bottom" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Like Profile">
+          <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+          <span class="show-for-sr">Like {{(userToDisplay | async)?.name}}</span>
+        </a>
+      </div>
+      <div class="action-area">
+        <a href="#" class="action-anchor has-tip bottom" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Comment on Profile">
+          <i class="fa fa-comments-o" aria-hidden="true"></i>
+          <span class="show-for-sr">Comment on {{(userToDisplay | async)?.name}}</span>
+        </a>
+      </div>
+      <div class="action-area">
+        <a href="#" class="action-anchor has-tip bottom" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Add user as a Friend">
+          <i class="fa fa-user-plus" aria-hidden="true"></i>
+          <span class="show-for-sr">Add {{(userToDisplay | async)?.name}} as a Friend</span>
+        </a>
+      </div>
+      <div class="action-area">
+        <a href="#" class="action-anchor has-tip bottom" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Send user a Gift">
+          <i class="fa fa-gift" aria-hidden="true"></i>
+          <span class="show-for-sr">Send {{(userToDisplay | async)?.name}} a Gift</span>
+        </a>
+      </div>
+      <div class="action-area">
+        <a href="#" class="action-anchor has-tip bottom" data-tooltip aria-haspopup="true" data-disable-hover="false" tabindex="2" title="Block user!">
+          <i class="fa fa-ban" aria-hidden="true"></i>
+          <span class="show-for-sr">Block {{(userToDisplay | async)?.name}}!</span>
+        </a>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>

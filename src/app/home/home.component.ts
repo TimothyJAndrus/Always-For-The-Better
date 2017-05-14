@@ -7,13 +7,16 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  providers: [UserService]
 })
 export class HomeComponent implements OnInit {
+  users: FirebaseListObservable<any[]>;
 
-  constructor() { }
+  constructor(private userService: UserService) { }
 
   ngOnInit() {
+    // this.user = this.userService.getUsers();
   }
 
 }
