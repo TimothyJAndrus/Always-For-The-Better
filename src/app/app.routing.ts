@@ -5,6 +5,7 @@ import { ContactComponent } from './contact/contact.component';
 import { UserComponent } from './user/user.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import { AccountComponent } from './account/account.component';
+import { EditUserComponent } from './edit-user/edit-user.component';
 
 const appRoutes: Routes = [
   {
@@ -34,6 +35,10 @@ const appRoutes: Routes = [
   {
     path: 'account',
     component: AccountComponent
+  },
+  {
+    path: 'edit-user',
+    component: EditUserComponent
   }
 ];
 

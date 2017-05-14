@@ -1,13 +1,8 @@
 // Defining values
-@mixin breakpoint {
-  $small: (0em, 40em);       /* 0, 640px */
-  $medium: (40.063em, 64em);  /* 641px, 1024px */
-  $large: (64.063em, 90em);  /* 1025px, 1440px */
-  $xlarge: (90.063em, 120em); /* 1441px, 1920px */
-  $xxlarge: (120.063em);       /* 1921px */
-}
-$body-background: #ffffff;
+$body-background: #fff;
 $light-gray: light-gray;
+$dark-gray: dark-gray;
+$black: #000;
 $contact-us-section-padding: 2rem;
 $contact-us-section-bg: $body-background;
 
@@ -20,29 +15,14 @@ $contact-us-section-bg: $body-background;
     border-bottom: 2px solid $light-gray;
     padding-bottom: $contact-us-section-padding;
     margin-bottom: $contact-us-section-padding;
-
-    @include breakpoint(medium) {
-      border-right: 1px solid $light-gray;
-      border-bottom: 0;
-      padding-bottom: 0;
-      margin-bottom: 0;
-    }
   }
 
   .contact-us-section-right {
     padding-left: $contact-us-section-padding;
-
-    @include breakpoint(medium) {
-      border-left: 1px solid $light-gray;
-    }
   }
 
   .contact-us-header {
     margin-bottom: $contact-us-section-padding;
-
-    @media screen and #{breakpoint(medium)} and #{breakpoint(large down)} {
-      font-size: 32px;
-    }
   }
 
   .responsive-embed {
