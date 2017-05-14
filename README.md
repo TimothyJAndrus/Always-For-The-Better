@@ -69,8 +69,8 @@ export var masterFirebaseConfig = {
 > :bug: Account: checkboxes are being saved as "on", not "true/false" no matter if they are checked or left empty.
 > :ant: Contact page: mail form is non-functional by design.
 > :ant: Home: More and Less buttons are functioning as toggles, and not changing color when clicked.
+> :ant: User-Detail page: Sizing of the card is incorrect. Icon on bottom of card are not exploring.
 > :beetle: Top Nav: Home link wrong color.
-> :beetle: Contact page: icons non-displaying as expected.
 
 ## Planning
 1. Configuration/dependencies
