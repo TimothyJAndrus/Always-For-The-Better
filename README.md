@@ -66,8 +66,9 @@ export var masterFirebaseConfig = {
 ```
 
 ## Known Bugs
-> No :bug: Home: More and Less buttons are functioning as toggles, and not changing color when clicked.
+> :bug: Account: checkboxes are being saved as "on", not "true/false" no matter if they are checked or left empty. 
 > :ant: Contact page: mail form is non-functional by design.
+> :ant: Home: More and Less buttons are functioning as toggles, and not changing color when clicked.
 > :beetle: Top Nav: Home link wrong color.
 > :beetle: Contact page: icons non-displaying as expected.
 
