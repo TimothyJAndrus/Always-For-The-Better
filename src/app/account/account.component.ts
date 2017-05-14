@@ -16,7 +16,7 @@ export class AccountComponent implements OnInit {
   }
 
   submitForm(name: string, title: string, image: string, linkedin: string, bio: string, mentor: boolean, mentee: boolean) {
-    if(image === null) {
+    if(image === "") {
       image = "../assets/img/default-image.jpg";
     }
     var newUser: User = new User(name, title, image, linkedin, bio, mentor, mentee);
