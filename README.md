@@ -71,7 +71,6 @@ export var masterFirebaseConfig = {
 > :ant: Home: More and Less buttons are functioning as toggles, and not changing color when clicked.
 > :ant: User-Detail page: Sizing of the card is incorrect. Icon on bottom of card are not exploring.
 > :beetle: Top Nav: Home link wrong color.
-> :beetle: Home: <hr> under More div not displaying when More div is showing.
 
 ## Planning
 1. Configuration/dependencies
