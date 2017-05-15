@@ -14,6 +14,7 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 export class UserComponent implements OnInit {
   users: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  filterByGender: String = "all";
 
   constructor(private router: Router, private userService: UserService) {}
 
@@ -23,5 +24,10 @@ export class UserComponent implements OnInit {
 
   goToDetailPage(clickedUser) {
     this.router.navigate(['user', clickedUser.$key]);
-  };
+  }
+
+  onChange(gender) {
+    this.filterByGender = gender;
+  }
+
 }

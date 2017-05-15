@@ -10,8 +10,16 @@
   </div>
   <div *ngIf="currentRoute === '/mentors'">
     <h3>Mentors</h3>
+    <label>Select View
+      <select>
+        <option value="all">All Mentors</option>
+        <option value="female">Female Mentors</option>
+        <option value="neutral">Gender Neutral Mentors</option>
+        <option value="male">Male Mentors</option>
+      </select>
+    </label>
     <div class="row medium-up-3 large-up-4">
-      <div class="column" *ngFor="let user of users | async">
+      <div class="column" *ngFor="let user of users | async | gender:filterByGender">
         <div *ngIf="user.mentor === true">
           <img (click)="goToDetailPage(user)" class="thumbnail" alt= "user portrait" src="{{user.image}}">
         </div>
@@ -21,7 +29,7 @@
   <div *ngIf="currentRoute === '/mentees'">
     <h3>Mentees</h3>
     <div class="row medium-up-3 large-up-4">
-      <div class="column" *ngFor="let user of users | async">
+      <div class="column" *ngFor="let user of users | async | gender">
         <div *ngIf="user.mentee === true">
           <img (click)="goToDetailPage(user)" class="thumbnail" alt= "user portrait" src="{{user.image}}">
         </div>
