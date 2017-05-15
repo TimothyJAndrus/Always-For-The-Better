@@ -7,18 +7,12 @@
         </div>
         <div class="profile-card-author">
           <h5 class="author-title">{{(userToDisplay | async)?.name}}</h5>
-          <p class="author-description">
-            {{(userToDisplay | async)?.title}}<br>
-            Gender: {{(userToDisplay | async)?.gender}}
-          </p>
-
+          <p class="author-description">{{(userToDisplay | async)?.title}}</p>
         </div>
       </div>
       <div class="profile-card-about">
         <h5 class="about-title separator-left">About Me</h5>
-        <p class="about-content">
-          {{(userToDisplay | async)?.bio}}
-        </p>
+        <p class="about-content">{{(userToDisplay | async)?.bio}}</p>
         <div class="row about-skills">
           <div class="small-6 columns">
             <h4>Mentoring Needs</h4>
