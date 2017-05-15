@@ -19,4 +19,10 @@ export class EditUserComponent implements OnInit {
   beginUpdatedUser(userToUpdate) {
     this.userService.updateUser(userToUpdate);
   }
+
+  beginDeletingUser(userToDelete) {
+    if(confirm("Are you sure you want to delete this user?")){
+      this.userService.deleteUser(userToDelete);
+    }
+  }
 }

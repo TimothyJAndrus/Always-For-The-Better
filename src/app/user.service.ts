@@ -25,13 +25,18 @@ export class UserService {
 
   updateUser(localUpdatedUser){
     var userEntryInFirebase = this.getUserById(localUpdatedUser.$key);
-        userEntryInFirebase.update({name: localUpdatedUser.name,
-                                    title: localUpdatedUser.title,
-                                    image: localUpdatedUser.image,
-                                    linkedin: localUpdatedUser.linkedin,
-                                    bio: localUpdatedUser.bio,
-                                    mentor: localUpdatedUser.mentor,
-                                    mentee: localUpdatedUser.mentee});
+    userEntryInFirebase.update({name: localUpdatedUser.name,
+                                title: localUpdatedUser.title,
+                                image: localUpdatedUser.image,
+                                linkedin: localUpdatedUser.linkedin,
+                                bio: localUpdatedUser.bio,
+                                mentor: localUpdatedUser.mentor,
+                                mentee: localUpdatedUser.mentee});
+  }
+
+  deleteUser(localUserToDelete){
+    var userEntryInFirebase = this.getUserById(localUserToDelete.$key);
+    userEntryInFirebase.remove();
   }
 
 }
