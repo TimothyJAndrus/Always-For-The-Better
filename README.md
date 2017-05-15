@@ -47,7 +47,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
  Before running the tests make sure you are serving the app via `ng serve`.
 
 ## Usage
-* **Option One:** visit [Always For The Better](https://shipwrecked-17de2.firebaseapp.com/)
+* **Option One:** visit [Always For The Better](https://always-for-the-better.firebaseapp.com)
 * **Option Two:**
   * `ng serve`
   * :eyes: app at [http://localhost:4200](http://localhost:4200) :tada:
