@@ -2,27 +2,26 @@
   <div class="row column text-center">
     <h1>Always For The Better</h1>
     <p class="lead">Growing Ourselves and Others</p>
-    <a routerLink="" class="button large hollow" (click)="moreButton = !moreButton">Learn More</a>
-    <a routerLink="" class="button large" (click)="moreButton = !moreButton">Learn Less</a>
-    <a href="#" class="button large hollow" disabled>Join Now</a>
+    <!-- <a routerLink="" class="button large hollow">Learn More</a>
+    <a routerLink="" class="button large">Learn Less</a>
+    <a href="#" class="button large hollow" disabled>Join Now</a> -->
   </div>
 </div>
-<div *ngIf="moreButton">
-  <div class="more">
-    <div class="row">
-      <div class="medium-6 columns medium-push-6">
-        <img class="thumbnail" src="/assets/img/mentoring.jpg" alt="Mentoring Image">
-      </div>
-      <div class="medium-6 columns medium-pull-6">
-        <h2>Mentoring </h2>
-        <p>
-          A relationship between two people with the goal of professional and personal development. The "mentor" is usually an experienced individual who shares knowledge, experience, and advice with a less experienced person, or "mentee." Post your profile with your offerings and needs, then connect with others who are a match.
-        </p>
-      </div>
+<div class="more">
+  <div class="row">
+    <div class="medium-6 columns medium-push-6">
+      <img class="thumbnail" src="/assets/img/mentoring.jpg" alt="Mentoring Image">
     </div>
-    <hr>
+    <div class="medium-6 columns medium-pull-6">
+      <h2>Mentoring </h2>
+      <p>
+        A relationship between two people with the goal of professional and personal development. The "mentor" is usually an experienced individual who shares knowledge, experience, and advice with a less experienced person, or "mentee." Post your profile with your offerings and needs, then connect with others who are a match.
+      </p>
+    </div>
   </div>
-    <div class="row">
+  <hr>
+</div>
+<div class="row">
       <div class="medium-4 columns">
         <h3>Mentor</h3>
         <p>
@@ -43,7 +42,6 @@
       </div>
       <hr>
     </div>
-</div>
 <div class="row column">
   <ul class="vertical medium-horizontal menu expanded text-center">
     <li><div class="stat">28</div><span>Mentors</span></li>
