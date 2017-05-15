@@ -1,4 +1,12 @@
 <div class="row column">
+  <div *ngIf="currentRoute === '/account'">
+    <h3>Mentors and Mentees</h3>
+    <div class="row medium-up-3 large-up-4">
+      <div class="column" *ngFor="let user of users | async">
+        <img (click)="goToDetailPage(user)" class="thumbnail" alt= "user portrait" src="{{user.image}}">
+      </div>
+    </div>
+  </div>
   <div *ngIf="currentRoute === '/mentors'">
     <h3>Mentors</h3>
     <div class="row medium-up-3 large-up-4">
@@ -16,14 +24,6 @@
         <div *ngIf="user.mentee === true">
           <img (click)="goToDetailPage(user)" class="thumbnail" alt= "user portrait" src="{{user.image}}">
         </div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <h3>Mentors and Mentees</h3>
-    <div class="row medium-up-3 large-up-4">
-      <div class="column" *ngFor="let user of users | async">
-          <img (click)="goToDetailPage(user)" class="thumbnail" alt= "user portrait" src="{{user.image}}">
       </div>
     </div>
   </div>
