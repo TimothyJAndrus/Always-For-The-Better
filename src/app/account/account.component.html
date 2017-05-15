@@ -27,7 +27,7 @@
       <input #newMentee id="mentee" type="checkbox"><label for="mentee">Mentee</label>
     </fieldset>
   </div>
-  <input (click)="submitForm(newName.value, newTitle.value, newImage.value, newLinkedin.value, newBio.value, newMentor.value, newMentee.value); newName.value=''; newTitle.value=''; newImage.value=''; newLinkedin.value=''; newBio.value=''; newMentor.value=''; newMentee.value=''" class="button expanded" type="submit" value="Sign Up">
+  <input (click)="submitForm(newName.value, newTitle.value, newImage.value, newLinkedin.value, newBio.value, newMentor.checked, newMentee.checked); newName.value=''; newTitle.value=''; newImage.value=''; newLinkedin.value=''; newBio.value=''; newMentor.value=''; newMentee.value=''" class="button expanded" type="submit" value="Sign Up">
 </form>
 <div>
   <app-user></app-user>
