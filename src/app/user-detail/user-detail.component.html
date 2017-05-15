@@ -7,7 +7,11 @@
         </div>
         <div class="profile-card-author">
           <h5 class="author-title">{{(userToDisplay | async)?.name}}</h5>
-          <p class="author-description">{{(userToDisplay | async)?.title}}</p>
+          <p class="author-description">
+            {{(userToDisplay | async)?.title}}<br>
+            Gender: {{(userToDisplay | async)?.gender}}
+          </p>
+
         </div>
       </div>
       <div class="profile-card-about">

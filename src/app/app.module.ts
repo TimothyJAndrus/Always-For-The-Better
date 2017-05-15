@@ -13,6 +13,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AccountComponent } from './account/account.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
+import { GenderPipePipe } from './gender-pipe.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -30,6 +31,7 @@ export const firebaseConfig = {
     UserDetailComponent,
     AccountComponent,
     EditUserComponent,
+    GenderPipePipe,
   ],
   imports: [
     BrowserModule,
