@@ -28,8 +28,16 @@
   </div>
   <div *ngIf="currentRoute === '/mentees'">
     <h3>Mentees</h3>
+    <label>Select View
+      <select (change)="onChange($event.target.value)">
+        <option value="all">All Mentees</option>
+        <option value="Female">Female Mentees</option>
+        <option value="Neutral">Gender Neutral Mentees</option>
+        <option value="Male">Male Mentees</option>
+      </select>
+    </label>
     <div class="row medium-up-3 large-up-4">
-      <div class="column" *ngFor="let user of users | async | gender">
+      <div class="column" *ngFor="let user of users | async | gender:filterByGender">
         <div *ngIf="user.mentee === true">
           <img (click)="goToDetailPage(user)" class="thumbnail" alt= "user portrait" src="{{user.image}}">
         </div>
