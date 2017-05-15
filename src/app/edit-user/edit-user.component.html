@@ -20,6 +20,11 @@
     <label for="image">Image URL</label>
     <input [(ngModel)]="selectedUser.image" type="text" id="image" name="image input" placeholder="Image URL">
   </div>
+  <select [(ngModel)]="selectedUser.gender" class="large-4 columns" name="gender">
+    <option value="female">Female</option>
+    <option value="neutral">Gender Neutral</option>
+    <option value="male">Male</option>
+  </select>
   <div class="row">
     <fieldset class="large-12 columns">
       <legend>Identify if you are a mentor, mentee, or both:</legend>

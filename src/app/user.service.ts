@@ -30,6 +30,7 @@ export class UserService {
                                 image: localUpdatedUser.image,
                                 linkedin: localUpdatedUser.linkedin,
                                 bio: localUpdatedUser.bio,
+                                gender: localUpdatedUser.gender,
                                 mentor: localUpdatedUser.mentor,
                                 mentee: localUpdatedUser.mentee});
   }

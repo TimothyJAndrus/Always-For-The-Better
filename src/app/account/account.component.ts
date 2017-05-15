@@ -15,12 +15,19 @@ export class AccountComponent implements OnInit {
   ngOnInit() {
   }
 
-  submitForm(name: string, title: string, image: string, linkedin: string, bio: string, mentor: boolean, mentee: boolean) {
+  submitForm(name: string,
+            title: string,
+            image: string,
+            linkedin: string,
+            bio: string,
+            gender: string,
+            mentor: boolean,
+            mentee: boolean) {
     if(image === "") {
       image = "../assets/img/default-image.jpg";
     }
-    
-    var newUser: User = new User(name, title, image, linkedin, bio, mentor, mentee);
+
+    var newUser: User = new User(name, title, image, linkedin, bio, gender, mentor, mentee);
     this.userService.addUser(newUser);
   }
 }
