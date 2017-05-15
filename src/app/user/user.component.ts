@@ -22,6 +22,6 @@ export class UserComponent implements OnInit {
   }
 
   goToDetailPage(clickedUser) {
-    this.router.navigate(['users', clickedUser.$key]);
+    this.router.navigate(['user', clickedUser.$key]);
   };
 }
