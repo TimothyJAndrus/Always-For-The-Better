@@ -66,7 +66,6 @@ export var masterFirebaseConfig = {
 ```
 
 ## Known Bugs
-> :bug: Account: checkboxes are being saved as "on", not "true/false" no matter if they are checked or left empty.
 > :bug: Mentor and Mentee pages: there are not four images in a row before the next row of images begins.
 > :ant: Contact page: mail form is non-functional by design; it does not actually send an email.
 > :ant: Home: More and Less buttons are functioning as toggles, and not changing color when clicked.
