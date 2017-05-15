@@ -20,14 +20,35 @@
     <label for="image">Image URL</label>
     <input #newImage type="text" id="image" name="image input" placeholder="Image URL">
   </div>
+  <label for="gender" class="large-4 columns">Gender
+    <select>
+      <option value="female">Female</option>
+      <option value="male">Male</option>
+      <option value="neutral">Gender Neutral</option>
+    </select>
+  </label>
+  <label for="wants" class="large-4 columns">Would like mentoring in
+    <select>
+      <option #newWant value="career">Career Development</option>
+      <option #newWant value="leadership">Leadership</option>
+      <option #newWant value="navigation">Navigating Professional Settings</option>
+    </select>
+  </label>
+  <label for="experience" class="large-4 columns">Willing to mentor others in
+    <select>
+      <option #newExperience value="career">Career Development</option>
+      <option #newExperience value="leadership">Leadership</option>
+      <option #newExperience value="navigation">Navigating Professional Settings</option>
+    </select>
+  </label>
   <div class="row">
-    <fieldset class="large-12 columns">
-      <legend>Identify if you are a mentor, mentee, or both:</legend>
+    Identify if you are a mentor, mentee, or both:
+    <fieldset class="large-4 columns">
       <input #newMentor id="mentor" type="checkbox"><label for="mentor">Mentor</label>
       <input #newMentee id="mentee" type="checkbox"><label for="mentee">Mentee</label>
     </fieldset>
   </div>
-  <input (click)="submitForm(newName.value, newTitle.value, newImage.value, newLinkedin.value, newBio.value, newMentor.checked, newMentee.checked); newName.value=''; newTitle.value=''; newImage.value=''; newLinkedin.value=''; newBio.value=''; newMentor.value=''; newMentee.value=''" class="button expanded" type="submit" value="Sign Up">
+  <input (click)="submitForm(newName.value, newTitle.value, newImage.value, newLinkedin.value, newBio.value, newGender.selected, newWant.selected, newExperience.selected, newMentor.checked, newMentee.checked); newName.value=''; newTitle.value=''; newImage.value=''; newLinkedin.value=''; newBio.value=''; newGender.value=''; newWant.value=''; newExperience.value=''; newMentor.value=''; newMentee.value=''" class="button expanded" type="submit" value="Sign Up">
 </form>
 <div>
   <app-user></app-user>

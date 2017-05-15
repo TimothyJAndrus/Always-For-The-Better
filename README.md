@@ -67,9 +67,12 @@ export var masterFirebaseConfig = {
 
 ## Known Bugs
 > :bug: Mentor and Mentee pages: there are not four images in a row before the next row of images begins.
+> :bug: User-Detail page: icons on bottom of card not displaying and are non-functional.
+> :bug: Contact page: icons not displaying in production.
+> :bug: Join: not functioning. "As a user, I would like to create a secure account so I can login to edit and delete my profile"
+> :bug: Account: anyone can access account. "As a logged in user, I would like to access my profile to edit and delete it so that as my experience and needs change they may be accurately reflected in my profile."
 > :ant: Contact page: mail form is non-functional by design; it does not actually send an email.
-> :ant: Home: More and Less buttons are functioning as toggles, and not changing color when clicked.
-> :ant: User-Detail page: Sizing of the card is incorrect. Icon on bottom of card are not exploring.
+> :ant: User-Detail page: Sizing of the card is incorrect.
 > :beetle: Top Nav: Home link wrong color.
 
 ## Planning

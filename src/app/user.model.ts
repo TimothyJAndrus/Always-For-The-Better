@@ -5,6 +5,9 @@ export class User {
     public image: string,
     public linkedin: string,
     public bio: string,
+    public gender: string,
+    public wants: string,
+    public experience: string,
     public mentor: boolean,
     public mentee: boolean
   )
