@@ -14,7 +14,7 @@ import { FirebaseObjectObservable } from 'angularfire2/database';
 export class UserComponent implements OnInit {
   users: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
-  
+
   constructor(private router: Router, private userService: UserService) {}
 
   ngOnInit(){

@@ -20,7 +20,18 @@ export class UserService {
   }
 
   getUserById(userId: string) {
-    return this.database.object('users/' + userId);
+    return this.database.object('/users/' + userId);
+  }
+
+  updateUser(localUpdatedUser){
+    var userEntryInFirebase = this.getUserById(localUpdatedUser.$key);
+        userEntryInFirebase.update({name: localUpdatedUser.name,
+                                    title: localUpdatedUser.title,
+                                    image: localUpdatedUser.image,
+                                    linkedin: localUpdatedUser.linkedin,
+                                    bio: localUpdatedUser.bio,
+                                    mentor: localUpdatedUser.mentor,
+                                    mentee: localUpdatedUser.mentee});
   }
 
 }

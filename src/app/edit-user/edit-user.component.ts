@@ -16,7 +16,7 @@ export class EditUserComponent implements OnInit {
   ngOnInit() {
   }
 
-  // beginUpdatedUser(userToUpdate) {
-  //   this.userService.updateUser(userToUpdate);
-  // }
+  beginUpdatedUser(userToUpdate) {
+    this.userService.updateUser(userToUpdate);
+  }
 }
