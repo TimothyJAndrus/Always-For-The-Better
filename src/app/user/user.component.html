@@ -11,11 +11,11 @@
   <div *ngIf="currentRoute === '/mentors'">
     <h3>Mentors</h3>
     <label>Select View
-      <select>
+      <select (change)="onChange($event.target.value)">
         <option value="all">All Mentors</option>
-        <option value="female">Female Mentors</option>
-        <option value="neutral">Gender Neutral Mentors</option>
-        <option value="male">Male Mentors</option>
+        <option value="Female">Female Mentors</option>
+        <option value="Neutral">Gender Neutral Mentors</option>
+        <option value="Male">Male Mentors</option>
       </select>
     </label>
     <div class="row medium-up-3 large-up-4">

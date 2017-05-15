@@ -12,23 +12,23 @@ export class GenderPipe implements PipeTransform {
 
     if (gender === "all") {
       return input;
-    } else if (gender === "female") {
+    } else if (gender === "Female") {
       for(var i = 0; i < input.length; i++) {
-        if (input[i].gender === "female") {
+        if (input[i].gender === "Female") {
           output.push(input[i]);
         }
       }
       return output;
-    } else if (gender === "neutral") {
+    } else if (gender === "Neutral") {
       for(var i = 0; i < input.length; i++) {
-        if (input[i].gender === "female") {
+        if (input[i].gender === "Neutral") {
           output.push(input[i]);
         }
       }
       return output;
-    } else if (gender === "male") {
+    } else if (gender === "Male") {
       for(var i = 0; i < input.length; i++) {
-        if (input[i].gender === "female") {
+        if (input[i].gender === "Male") {
           output.push(input[i]);
         }
       }
