@@ -10,19 +10,9 @@ $contact-us-section-bg: $body-background;
   padding: $contact-us-section-padding;
   background: $contact-us-section-bg;
 
-  .contact-us-section-left {
-    padding-right: $contact-us-section-padding;
-    border-bottom: 2px solid $light-gray;
-    padding-bottom: $contact-us-section-padding;
-    margin-bottom: $contact-us-section-padding;
-  }
-
-  .contact-us-section-right {
-    padding-left: $contact-us-section-padding;
-  }
-
   .contact-us-header {
     margin-bottom: $contact-us-section-padding;
+    margin-top: 50px;
   }
 
   .responsive-embed {

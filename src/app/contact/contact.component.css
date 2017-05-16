@@ -3,13 +3,6 @@
   background: #fefefe;
 }
 
-.contact-us-section .contact-us-section-left {
-  padding-right: 2rem;
-  border-bottom: 2px solid #e6e6e6;
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
-}
-
 @media print, screen and (min-width: 40em) {
   .contact-us-section .contact-us-section-left {
     border-right: 1px solid #e6e6e6;
@@ -17,10 +10,6 @@
     padding-bottom: 0;
     margin-bottom: 0;
   }
-}
-
-.contact-us-section .contact-us-section-right {
-  padding-left: 2rem;
 }
 
 @media print, screen and (min-width: 40em) {
