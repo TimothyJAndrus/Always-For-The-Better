@@ -20,16 +20,19 @@
     <label for="image">Image URL</label>
     <input #newImage type="text" id="image" name="image input" placeholder="Image URL">
   </div>
-  <label for="gender" class="large-4 columns">
-    <select #newGender class="large-4 columns">
-      <option value="Female">Female</option>
-      <option value="Neutral">Neutral</option>
-      <option value="Male">Male</option>
-    </select>
-  </label>
-  <div class="row">
+  <div class="pull-left">
+    <label for="gender">
+      <select #newGender>
+        <option value="" disabled>Choose Gender</option>
+        <option value="Female">Female</option>
+        <option value="Neutral">Neutral</option>
+        <option value="Male">Male</option>
+      </select>
+    </label>
+  </div>
+  <div>
     Identify if you are a mentor, mentee, or both:
-    <fieldset class="large-4 columns">
+    <fieldset>
       <input #newMentor id="mentor" type="checkbox"><label for="mentor">Mentor</label>
       <input #newMentee id="mentee" type="checkbox"><label for="mentee">Mentee</label>
     </fieldset>
