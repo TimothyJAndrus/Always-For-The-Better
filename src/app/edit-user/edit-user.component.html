@@ -20,13 +20,15 @@
     <label for="image">Image URL</label>
     <input [(ngModel)]="selectedUser.image" type="text" id="image" name="image input" placeholder="Image URL">
   </div>
-  <select class="large-4 columns" name="gender">
-    <option [(ngModel)]="selectedUser.gender" name="Female" value="Female">Female</option>
-    <option [(ngModel)]="selectedUser.gender" name="Neutral" value="Neutral">Neutral</option>
-    <option [(ngModel)]="selectedUser.gender" name="Male" value="Male">Male</option>
-  </select>
-  <div class="row">
-    <fieldset class="large-12 columns">
+  <div>
+    <select name="gender">
+      <option [(ngModel)]="selectedUser.gender" name="Female" value="Female">Female</option>
+      <option [(ngModel)]="selectedUser.gender" name="Neutral" value="Neutral">Neutral</option>
+      <option [(ngModel)]="selectedUser.gender" name="Male" value="Male">Male</option>
+    </select>
+  </div>
+  <div>
+    <fieldset>
       <legend>Identify if you are a mentor, mentee, or both:</legend>
       <input [(ngModel)]="selectedUser.mentor" id="mentor" type="checkbox"><label for="mentor">Mentor</label>
       <input [(ngModel)]="selectedUser.mentee" id="mentee" type="checkbox"><label for="mentee">Mentee</label>
