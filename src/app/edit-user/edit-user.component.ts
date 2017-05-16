@@ -17,7 +17,6 @@ export class EditUserComponent implements OnInit {
   }
 
   beginUpdatedUser(userToUpdate) {
-    console.log(userToUpdate);
     this.userService.updateUser(userToUpdate);
   }
 
