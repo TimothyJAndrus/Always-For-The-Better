@@ -1,7 +1,7 @@
 // Defining values
 $body-background: #fff;
 $light-gray: light-gray;
-$dark-gray: dark-gray;
+$dark-gray: #369;
 $black: #000;
 $contact-us-section-padding: 2rem;
 $contact-us-section-bg: $body-background;
@@ -48,11 +48,6 @@ $contact-us-section-bg: $body-background;
     border-radius: 5000px;
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .contact-us-file-button {
-    background: transparent;
-    color: $dark-gray;
   }
 }
 
