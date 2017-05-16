@@ -20,7 +20,7 @@
     </label>
     <div class="row">
       <div *ngFor="let user of users | async | gender:filterByGender">
-        <div class="column medium-3" *ngIf="user.mentor === true">
+        <div class="column medium-3 end" *ngIf="user.mentor === true">
           <img (click)="goToDetailPage(user)" class="thumbnail" width="550" height="550" alt= "user portrait" src="{{user.image}}">
         </div>
       </div>
@@ -38,7 +38,7 @@
     </label>
     <div class="row">
       <div *ngFor="let user of users | async | gender:filterByGender">
-        <div class="column medium-3">
+        <div class="column medium-3 end">
           <img *ngIf="user.mentee === true" (click)="goToDetailPage(user)" class="thumbnail" width="550" height="550" alt= "user portrait" src="{{user.image}}">
         </div>
       </div>
