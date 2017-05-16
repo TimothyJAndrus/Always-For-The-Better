@@ -39,7 +39,7 @@
     <div class="row">
       <div *ngFor="let user of users | async | gender:filterByGender">
         <div class="column medium-3 large-4" *ngIf="user.mentee === true">
-          <img (click)="goToDetailPage(user)" class="thumbnail" width="550" height="550" alt= "user portrait" src="{{user.image}}">
+          <img *ngIf="user.mentee === true" (click)="goToDetailPage(user)" class="thumbnail" width="550" height="550" alt= "user portrait" src="{{user.image}}">
         </div>
       </div>
     </div>
