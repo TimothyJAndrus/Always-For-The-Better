@@ -42,8 +42,8 @@
 }
 
 .login-box-social-section {
-  background: 
-  url("http://www.mmmts.com/lib/img/coaching-mentoring-training-banner.png");
+  background:
+  url("http://cdn.halogensoftware.com/uploads/blog/lessons-learned-in-mentoring/_thumb/848x450/lessons-learned-in-mentoring.png");
   background-size: cover;
   background-position: center;
 }
@@ -141,7 +141,7 @@
   color: #fefefe;
 }
 
-.login-box-social-button-twitter {
+.login-box-social-button-github {
   display: inline-block;
   vertical-align: middle;
   margin: 0 0 1rem 0;
@@ -154,7 +154,7 @@
   line-height: 1;
   text-align: center;
   cursor: pointer;
-  background-color: #55acee;
+  background-color: #606060;
   color: #fefefe;
   display: block;
   width: 100%;
@@ -216,6 +216,6 @@
   display: block;
   margin-bottom: 2.5rem;
   font-size: 1.875rem;
-  color: #fefefe;
+  color: #000000;
   text-align: center;
 }
