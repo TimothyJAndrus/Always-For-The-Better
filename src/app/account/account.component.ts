@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
 import { User } from '../user.model';
+import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-account',
@@ -9,25 +10,33 @@ import { User } from '../user.model';
   providers: [UserService]
 })
 export class AccountComponent implements OnInit {
+  newUserForm: FormGroup;
 
-  constructor(private userService: UserService) { }
+  constructor(private userService: UserService,
+              private fb: FormBuilder) { }
 
   ngOnInit() {
+    this.newUserForm = this.fb.group({
+      name: ['', Validators.required],
+      title: ['', Validators.required],
+      image: [''],
+      linkedin: ['', Validators.required],
+      bio: ['', Validators.required],
+      gender: ['', Validators.required],
+      mentor: [''],
+      mentee: ['']
+    })
   }
 
-  submitForm(name: string,
-            title: string,
-            image: string,
-            linkedin: string,
-            bio: string,
-            gender: string,
-            mentor: boolean,
-            mentee: boolean) {
+  submitForm() {
+    var {name, title, image, linkedin, bio, gender, mentor, mentee} = this.newUserForm.value;
     if(image === "") {
       image = "../assets/img/default-image.jpg";
     }
 
     var newUser: User = new User(name, title, image, linkedin, bio, gender, mentor, mentee);
+    console.log(newUser);
     this.userService.addUser(newUser);
+    this.newUserForm.reset();
   }
 }
