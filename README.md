@@ -66,11 +66,14 @@ export var masterFirebaseConfig = {
 ```
 
 ## Known Bugs
-> :bug: Mentor and Mentee pages: new row of images float right.
 > :bug: User-Detail page: icons on bottom of card not displaying and are non-functional.
+
 > :bug: Join: not functioning. "As a user, I would like to create a secure account so I can login to edit and delete my profile"
+
 > :bug: Account: anyone can access account. "As a logged in user, I would like to access my profile to edit and delete it so that as my experience and needs change they may be accurately reflected in my profile."
+
 > :ant: Contact page: mail form is non-functional by design; it does not actually send an email.
+
 > :beetle: Top Nav: Home link wrong color.
 
 ## Planning
