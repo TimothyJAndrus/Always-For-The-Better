@@ -15,6 +15,7 @@ import { AccountComponent } from './account/account.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 import { GenderPipe } from './gender.pipe';
 import { JoinComponent } from './join/join.component';
+import { LoginComponent } from './login/login.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -34,6 +35,7 @@ export const firebaseConfig = {
     EditUserComponent,
     GenderPipe,
     JoinComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

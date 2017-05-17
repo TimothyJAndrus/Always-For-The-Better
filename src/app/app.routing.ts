@@ -7,6 +7,7 @@ import { UserDetailComponent } from './user-detail/user-detail.component';
 import { AccountComponent } from './account/account.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 import { JoinComponent } from './join/join.component';
+import { LoginComponent } from './login/login.component';
 
 const appRoutes: Routes = [
   {
@@ -44,6 +45,10 @@ const appRoutes: Routes = [
   {
     path: 'join',
     component: JoinComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   }
 ];
 
