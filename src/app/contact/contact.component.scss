@@ -1,7 +1,7 @@
 // Defining values
 $body-background: #fff;
 $light-gray: light-gray;
-$dark-gray: dark-gray;
+$dark-gray: #369;
 $black: #000;
 $contact-us-section-padding: 2rem;
 $contact-us-section-bg: $body-background;
@@ -10,19 +10,9 @@ $contact-us-section-bg: $body-background;
   padding: $contact-us-section-padding;
   background: $contact-us-section-bg;
 
-  .contact-us-section-left {
-    padding-right: $contact-us-section-padding;
-    border-bottom: 2px solid $light-gray;
-    padding-bottom: $contact-us-section-padding;
-    margin-bottom: $contact-us-section-padding;
-  }
-
-  .contact-us-section-right {
-    padding-left: $contact-us-section-padding;
-  }
-
   .contact-us-header {
     margin-bottom: $contact-us-section-padding;
+    margin-top: 50px;
   }
 
   .responsive-embed {
@@ -48,11 +38,6 @@ $contact-us-section-bg: $body-background;
     border-radius: 5000px;
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-
-  .contact-us-file-button {
-    background: transparent;
-    color: $dark-gray;
   }
 }
 

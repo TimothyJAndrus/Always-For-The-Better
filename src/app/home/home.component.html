@@ -55,7 +55,7 @@
 </div>
 <div class="row medium-up-3 large-up-4">
   <div class="column" *ngFor="let user of users | async">
-    <img class="thumbnail" alt= "user portrait" src="{{user.image}}">
+    <img (click)="goToDetailPage(user)" class="thumbnail" width="550" height="550" alt= "user portrait" src="{{user.image}}">
   </div>
 </div>
 <hr>

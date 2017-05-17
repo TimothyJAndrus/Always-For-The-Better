@@ -3,7 +3,7 @@
     <h3>Mentors and Mentees</h3>
     <div class="row medium-up-3 large-up-4">
       <div class="column" *ngFor="let user of users | async">
-        <img (click)="goToDetailPage(user)" class="thumbnail" alt= "user portrait" src="{{user.image}}">
+        <img (click)="goToDetailPage(user)" class="thumbnail" width="550" height="550" alt= "user portrait" src="{{user.image}}">
         <app-edit-user [selectedUser]="user"></app-edit-user>
       </div>
     </div>
@@ -18,10 +18,10 @@
         <option value="Male">Male Mentors</option>
       </select>
     </label>
-    <div class="row medium-up-3 large-up-4">
-      <div class="column" *ngFor="let user of users | async | gender:filterByGender">
-        <div *ngIf="user.mentor === true">
-          <img (click)="goToDetailPage(user)" class="thumbnail" alt= "user portrait" src="{{user.image}}">
+    <div class="row">
+      <div *ngFor="let user of users | async | gender:filterByGender">
+        <div class="column medium-3 end" *ngIf="user.mentor === true">
+          <img (click)="goToDetailPage(user)" class="thumbnail" width="550" height="550" alt= "user portrait" src="{{user.image}}">
         </div>
       </div>
     </div>
@@ -36,10 +36,10 @@
         <option value="Male">Male Mentees</option>
       </select>
     </label>
-    <div class="row medium-up-3 large-up-4">
-      <div class="column" *ngFor="let user of users | async | gender:filterByGender">
-        <div *ngIf="user.mentee === true">
-          <img (click)="goToDetailPage(user)" class="thumbnail" alt= "user portrait" src="{{user.image}}">
+    <div class="row">
+      <div *ngFor="let user of users | async | gender:filterByGender">
+        <div class="column medium-3 end">
+          <img *ngIf="user.mentee === true" (click)="goToDetailPage(user)" class="thumbnail" width="550" height="550" alt= "user portrait" src="{{user.image}}">
         </div>
       </div>
     </div>
