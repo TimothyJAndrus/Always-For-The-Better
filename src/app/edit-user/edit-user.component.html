@@ -1,27 +1,27 @@
-<form class="callout text-center">
+<form [formGroup]="editUser" class="callout text-center">
   <h2>Edit Account</h2>
   <div class="floated-label-wrapper">
     <label for="full-name">Full name</label>
-    <input [(ngModel)]="selectedUser.name" type="text" id="full-name" name="full-name-input" placeholder="{{selectedUser.name}}">
+    <input [(ngModel)]="selectedUser.name" type="text" id="full-name" formControlName="name" required placeholder="{{selectedUser.name}}">
   </div>
   <div class="floated-label-wrapper">
     <label for="title">Job Title</label>
-    <input [(ngModel)]="selectedUser.title" type="text" id="title" name="title-input" placeholder="Title">
+    <input [(ngModel)]="selectedUser.title" type="text" id="title" formControlName="title" required placeholder="Title">
   </div>
   <div class="floated-label-wrapper">
     <label for="linkedin">LinkedIn url</label>
-    <input [(ngModel)]="selectedUser.linkedin" type="text" id="linkedin" name="linkedin-input" placeholder="{{selectedUser.linkedin}}">
+    <input [(ngModel)]="selectedUser.linkedin" type="text" id="linkedin" formControlName="linkedin" required placeholder="{{selectedUser.linkedin}}">
   </div>
   <div class="floated-label-wrapper">
     <label for="bio">Bio</label>
-    <textarea [(ngModel)]="selectedUser.bio" type="text" id="bio" name="bio-input" placeholder="{{selectedUser.bio}}"></textarea>
+    <textarea [(ngModel)]="selectedUser.bio" type="text" id="bio" formControlName="bio" required placeholder="{{selectedUser.bio}}"></textarea>
   </div>
   <div class="floated-label-wrapper">
     <label for="image">Image URL</label>
-    <input [(ngModel)]="selectedUser.image" type="text" id="image" name="image-input" placeholder="Image URL">
+    <input [(ngModel)]="selectedUser.image" type="text" id="image" formControlName="image" required placeholder="Image URL">
   </div>
   <div>
-    <select [(ngModel)]="selectedUser.gender" name="gender">
+    <select [(ngModel)]="selectedUser.gender" formControlName="gender" required>
       <!-- <option>Choose Gender</option> -->
       <option name="Female" value="Female" ngDefaultControl>Female</option>
       <option name="Neutral" value="Neutral" ngDefaultControl>Neutral</option>
@@ -31,12 +31,10 @@
   <div>
     <fieldset>
       <legend>Identify if you are a mentor, mentee, or both:</legend>
-      <input [(ngModel)]="selectedUser.mentor" name="mentor" id="mentor" type="checkbox" ngDefaultControl><label for="mentor">Mentor</label>
-      <input [(ngModel)]="selectedUser.mentee" name="mentee" id="mentee" type="checkbox" ngDefaultControl><label for="mentee">Mentee</label>
+      <input [(ngModel)]="selectedUser.mentor" formControlName="mentor" id="mentor" type="checkbox" ngDefaultControl><label for="mentor">Mentor</label>
+      <input [(ngModel)]="selectedUser.mentee" formControlName="mentee" id="mentee" type="checkbox" ngDefaultControl><label for="mentee">Mentee</label>
     </fieldset>
   </div>
-  <input (click)="beginUpdatedUser(selectedUser)" class="button expanded" type="update" value="Save">
+  <input (click)="beginUpdatedUser(selectedUser)" [disabled]="!editUser.valid" class="button expanded" type="update" value="Save">
   <input (click)="beginDeletingUser(selectedUser)" class="button expanded" type="delete" value="Delete">
 </form>
-
-<!-- <script src="/edit-user.component.js"></script> -->

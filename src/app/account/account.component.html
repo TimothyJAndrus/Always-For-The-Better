@@ -1,28 +1,28 @@
-<form class="callout text-center">
+<form [formGroup]="newUserForm" class="callout text-center">
   <h2>Become A Member</h2>
   <div class="floated-label-wrapper">
     <label for="full-name">Full name</label>
-    <input #newName type="text" id="full-name" name="full name input" placeholder="Full Name">
+    <input #newName type="text" id="full-name" formControlName="name" required placeholder="Full Name">
   </div>
   <div class="floated-label-wrapper">
     <label for="title">Job Title</label>
-    <input #newTitle type="text" id="title" name="title input" placeholder="Title">
+    <input #newTitle type="text" id="title" formControlName="title" required placeholder="Title">
   </div>
   <div class="floated-label-wrapper">
     <label for="linkedin">LinkedIn url</label>
-    <input #newLinkedin type="text" id="linkedin" name="linkedin input" placeholder="LinkedIn URL">
+    <input #newLinkedin type="text" id="linkedin" formControlName="linkedin" required placeholder="LinkedIn URL">
   </div>
   <div class="floated-label-wrapper">
     <label for="bio">Bio</label>
-    <textarea #newBio type="text" id="bio" name="bio input" placeholder="Bio, 100 word max"></textarea>
+    <textarea #newBio type="text" id="bio" formControlName="bio" required placeholder="Bio, 100 word max"></textarea>
   </div>
   <div class="floated-label-wrapper">
     <label for="image">Image URL</label>
-    <input #newImage type="text" id="image" name="image input" placeholder="Image URL">
+    <input #newImage type="text" id="image" formControlName="image" required placeholder="Image URL">
   </div>
   <div class="pull-left">
     <label for="gender">
-      <select #newGender>
+      <select #newGender formControlName="gender" required>
         <option value="" disabled>Choose Gender</option>
         <option value="Female">Female</option>
         <option value="Neutral">Neutral</option>
@@ -33,29 +33,11 @@
   <div>
     Identify if you are a mentor, mentee, or both:
     <fieldset>
-      <input #newMentor id="mentor" type="checkbox"><label for="mentor">Mentor</label>
-      <input #newMentee id="mentee" type="checkbox"><label for="mentee">Mentee</label>
+      <input #newMentor formControlName="mentor" id="mentor" type="checkbox"><label for="mentor">Mentor</label>
+      <input #newMentee formControlName="mentee" id="mentee" type="checkbox"><label for="mentee">Mentee</label>
     </fieldset>
   </div>
-  <input (click)="submitForm(newName.value,
-                            newTitle.value,
-                            newImage.value,
-                            newLinkedin.value,
-                            newBio.value,
-                            newGender.value,
-                            newMentor.checked,
-                            newMentee.checked
-                            );
-                            newName.value='';
-                            newTitle.value='';
-                            newImage.value='';
-                            newLinkedin.value='';
-                            newBio.value='';
-                            newGender.value='';
-                            newMentor.unchecked;
-                            newMentee.unchecked
-                            "
-                            class="button expanded" type="submit" value="Sign Up">
+  <input (click)="submitForm()" [disabled]="!newUserForm.valid" class="button expanded" type="submit" value="Sign Up">
 </form>
 <div>
   <app-user></app-user>
