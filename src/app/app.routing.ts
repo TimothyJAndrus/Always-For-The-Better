@@ -8,9 +8,9 @@ import { AccountComponent } from './account/account.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 import { JoinComponent } from './join/join.component';
 import { LoginComponent } from './login/login.component';
-import { AuthGuardComponent } from './auth-guard/auth-guard.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { RegisterComponent } from './register/register.component';
+import { AuthGuard } from './auth.guard';
 
 const appRoutes: Routes = [
   {
@@ -27,7 +27,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'welcome',
-    component: WelcomeComponent, canActivate: [AuthGuardComponent]
+    component: WelcomeComponent, canActivate: [AuthGuard]
   },
   {
     path: 'join',
