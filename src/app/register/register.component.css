@@ -57,6 +57,16 @@
   font-weight: 400;
 }
 
+.form-control {
+  margin-bottom: 1.25rem;
+  height: 2rem;
+  border: 0;
+  padding-left: 0;
+  box-shadow: none;
+  border-bottom: 1px solid #1779ba;
+  font-weight: 400;
+}
+
 .login-box-input:focus {
   color: #1779ba;
   transition: 0.2s ease-in-out;
