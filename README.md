@@ -115,7 +115,7 @@ export var masterFirebaseConfig = {
 
 
 ## License
-**_[MLP License](/LICENSE.md)_ :copyright: 2017 Grace Stuart **
+**_[MLP License](/LICENSE.md)_ :copyright: 2017 Grace Stuart**
 
 ***
 
