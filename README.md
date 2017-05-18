@@ -69,8 +69,6 @@ export var masterFirebaseConfig = {
 ## Known Bugs
 > :bug: User-Detail page: icons on bottom of card not displaying and are non-functional.
 
-> :bug: Join: not functioning. "As a user, I would like to create a secure account so I can login to edit and delete my profile"
-
 > :bug: Account: anyone can access account. "As a logged in user, I would like to access my profile to edit and delete it so that as my experience and needs change they may be accurately reflected in my profile."
 
 > :ant: Contact page: mail form is non-functional by design; it does not actually send an email.
@@ -104,6 +102,7 @@ export var masterFirebaseConfig = {
  * [Home page image](http://www.changeboard.com/content/5121/mentoring-the-good-the-bad-and-the-ugly/)
  * [Login image](http://www.theptecs.com/mentoring.html)
 
+
 ## Maintainer
 [Grace Stuart](href="https://github.com/gstuart")
 
@@ -116,6 +115,7 @@ export var masterFirebaseConfig = {
 
 ## License
 **_[MLP License](/LICENSE.md)_** :copyright: **2017 Grace Stuart**
+
 
 ***
 
