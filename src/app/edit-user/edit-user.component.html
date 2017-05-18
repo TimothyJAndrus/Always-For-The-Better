@@ -1,8 +1,24 @@
 <form [formGroup]="editUser" class="callout text-center">
   <h2>Edit Account</h2>
   <div class="floated-label-wrapper">
-    <label for="full-name">Full name</label>
-    <input [(ngModel)]="selectedUser.name" type="text" id="full-name" formControlName="name" required placeholder="{{selectedUser.name}}">
+    <label for="firstName">First Name</label>
+    <input [(ngModel)]="selectedUser.firstName" type="text" id="firstName" formControlName="firstName" required placeholder="{{selectedUser.firstName}}">
+  </div>
+  <div class="floated-label-wrapper">
+    <label for="lastName">Last Name</label>
+    <input [(ngModel)]="selectedUser.lastName" type="text" id="lastName" formControlName="lastName" required placeholder="{{selectedUser.lastName}}">
+  </div>
+  <div class="floated-label-wrapper">
+    <label for="email">Email</label>
+    <input [(ngModel)]="selectedUser.email" type="text" id="email" formControlName="email" required placeholder="{{selectedUser.email}}">
+  </div>
+  <div class="floated-label-wrapper">
+    <label for="username">Username</label>
+    <input [(ngModel)]="selectedUser.username" type="text" id="username" formControlName="username" required placeholder="{{selectedUser.username}}">
+  </div>
+  <div class="floated-label-wrapper">
+    <label for="password">Password</label>
+    <input [(ngModel)]="selectedUser.password" type="text" id="password" formControlName="password" required placeholder="{{selectedUser.password}}">
   </div>
   <div class="floated-label-wrapper">
     <label for="title">Job Title</label>

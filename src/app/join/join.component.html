@@ -2,8 +2,10 @@
   <div class="row collapse expanded">
     <div class="small-12 medium-6 column small-order-2 medium-order-1">
       <div class="login-box-form-section">
-        <h1 class="login-box-title">Sign up</h1>
-        <input class="login-box-input" type="text" name="username" placeholder="Username" />
+        <h1 class="login-box-title">Sign Up</h1>
+        <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !username.valid }">
+          <input class="login-box-input" type="text" name="username" placeholder="Username" />
+        </div>
         <input class="login-box-input" type="email" name="email" placeholder="E-mail" />
         <input class="login-box-input" type="password" name="password" placeholder="Password" />
         <input class="login-box-input" type="password" name="password2" placeholder="Retype password" />

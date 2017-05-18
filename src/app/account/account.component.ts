@@ -21,6 +21,7 @@ export class AccountComponent implements OnInit {
       password: ['', Validators.required],
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
+      email: ['', Validators.required],
       title: ['', Validators.required],
       image: [''],
       linkedin: ['', Validators.required],
@@ -32,12 +33,12 @@ export class AccountComponent implements OnInit {
   }
 
   submitForm() {
-    var {username, firstName, lastName, password, title, image, linkedin, bio, gender, mentor, mentee} = this.newUserForm.value;
+    var {username, firstName, lastName, email, password, title, image, linkedin, bio, gender, mentor, mentee} = this.newUserForm.value;
     if(image === "") {
       image = "../assets/img/default-image.jpg";
     }
 
-    var newUser: User = new User(username, password, firstName, lastName, title, image, linkedin, bio, gender, mentor, mentee);
+    var newUser: User = new User(username, password, email, firstName, lastName, title, image, linkedin, bio, gender, mentor, mentee);
     console.log(newUser);
     this.userService.addUser(newUser);
     this.newUserForm.reset();

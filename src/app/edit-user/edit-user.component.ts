@@ -18,7 +18,11 @@ export class EditUserComponent implements OnInit {
 
   ngOnInit() {
     this.editUser = this.fb.group({
-      name: [''],
+      firstName: [''],
+      lastName: [''],
+      email: [''],
+      username: [''],
+      password: [''],
       title: [''],
       bio: [''],
       linkedin: [''],
@@ -28,7 +32,11 @@ export class EditUserComponent implements OnInit {
       mentee: ['']
     })
     this.editUser.reset({
-      name: this.selectedUser.name,
+      firstName: this.selectedUser.firstName,
+      lastName: this.selectedUser.lastName,
+      email: this.selectedUser.email,
+      username: this.selectedUser.username,
+      password: this.selectedUser.password,
       title: this.selectedUser.title,
       bio: this.selectedUser.bio,
       linkedin: this.selectedUser.linkedin,
@@ -40,7 +48,6 @@ export class EditUserComponent implements OnInit {
   }
 
   beginUpdatedUser(userToUpdate) {
-    var {name, title, bio, linkedin, image, gender, mentor, mentee} = this.editUser.value;
     this.userService.updateUser(userToUpdate);
   }
 

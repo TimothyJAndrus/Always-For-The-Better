@@ -4,6 +4,7 @@ export class User {
     public password: string,
     public firstName: string,
     public lastName: string,
+    public email: string,
     public title: string,
     public image: string,
     public linkedin: string,

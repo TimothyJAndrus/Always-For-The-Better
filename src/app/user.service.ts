@@ -27,6 +27,9 @@ export class UserService {
     userEntryInFirebase.update({
                                 firstName: localUpdatedUser.firstName,
                                 lastName: localUpdatedUser.lastName,
+                                username: localUpdatedUser.username,
+                                password: localUpdatedUser.password,
+                                email: localUpdatedUser.email,
                                 title: localUpdatedUser.title,
                                 image: localUpdatedUser.image,
                                 linkedin: localUpdatedUser.linkedin,
