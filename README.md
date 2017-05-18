@@ -98,7 +98,10 @@ export var masterFirebaseConfig = {
 ## Sources
  * [Content about mentoring](http://www.apa.org/education/grad/mentoring.aspx)
  * [Code for login and registration](http://jasonwatmore.com/post/2016/09/29/angular-2-user-registration-and-login-example-tutorial)
+ * [Registration page](http://www.halogensoftware.com/blog/lessons-learned-in-mentoring)
  * [Home page image](http://www.changeboard.com/content/5121/mentoring-the-good-the-bad-and-the-ugly/)
+ * [Login image](http://www.theptecs.com/mentoring.html)
+
 
 ## Maintainer
 [Grace Stuart](href="https://github.com/gstuart")
@@ -111,7 +114,8 @@ export var masterFirebaseConfig = {
 
 
 ## License
-**_[MLP License](/LICENSE.md)_ :copyright: 2017 Grace Stuart **
+**_[MLP License](/LICENSE.md)_** :copyright: **2017 Grace Stuart**
+
 
 ***
 

@@ -6,11 +6,32 @@ import { UserComponent } from './user/user.component';
 import { UserDetailComponent } from './user-detail/user-detail.component';
 import { AccountComponent } from './account/account.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
+import { JoinComponent } from './join/join.component';
+import { LoginComponent } from './login/login.component';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { RegisterComponent } from './register/register.component';
+import { AuthGuard } from './auth.guard';
 
 const appRoutes: Routes = [
   {
     path: '',
     component: HomeComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
+  },
+  {
+    path: 'register',
+    component: RegisterComponent
+  },
+  {
+    path: 'welcome',
+    component: WelcomeComponent, canActivate: [AuthGuard]
+  },
+  {
+    path: 'join',
+    component: JoinComponent
   },
   {
     path: 'contact',
@@ -39,6 +60,13 @@ const appRoutes: Routes = [
   {
     path: 'edit-user',
     component: EditUserComponent
+  },
+
+
+  // otherwise redirect to home
+  {
+    path: '**',
+    redirectTo: ''
   }
 ];
 

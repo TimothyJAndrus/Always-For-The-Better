@@ -1,0 +1,19 @@
+<div class="form-registration">
+  <figure class="form-registration-img">
+    <img src="http://nebula.wsimg.com/2d02aa46bcde8281724b1bfeeaccc6a1?AccessKeyId=75723DF1690EBF114831&disposition=0&alloworigin=1" alt="" />
+    <figcaption class="form-registration-img-caption"></figcaption>
+  </figure>
+  <form class="form-registration-group" action="" name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+    <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !username.valid }">
+        <input type="text" class="form-registration-input" name="username" type="email" placeholder="Your username"[(ngModel)]="model.username" #username="ngModel" required />
+        <div *ngIf="f.submitted && !username.valid" class="help-block">Username is required</div>
+    </div>
+    <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+        <input class="form-registration-input" name="password" type="password" placeholder="Your password"[(ngModel)]="model.password" #password="ngModel" required />
+        <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
+    </div>
+    <input class="form-registration-submit-button" name="login" type="submit" value="Log In">
+    <input class="form-registration-submit-button hide" name="logOut" type="submit" value="Log Out">
+    <a [routerLink]="['/register']" class="form-registration-submit-button">Register</a>
+  </form>
+</div>

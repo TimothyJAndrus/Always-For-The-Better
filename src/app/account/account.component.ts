@@ -17,7 +17,11 @@ export class AccountComponent implements OnInit {
 
   ngOnInit() {
     this.newUserForm = this.fb.group({
-      name: ['', Validators.required],
+      username: ['', Validators.required],
+      password: ['', Validators.required],
+      firstName: ['', Validators.required],
+      lastName: ['', Validators.required],
+      email: ['', Validators.required],
       title: ['', Validators.required],
       image: [''],
       linkedin: ['', Validators.required],
@@ -29,12 +33,12 @@ export class AccountComponent implements OnInit {
   }
 
   submitForm() {
-    var {name, title, image, linkedin, bio, gender, mentor, mentee} = this.newUserForm.value;
+    var {username, firstName, lastName, email, password, title, image, linkedin, bio, gender, mentor, mentee} = this.newUserForm.value;
     if(image === "") {
       image = "../assets/img/default-image.jpg";
     }
 
-    var newUser: User = new User(name, title, image, linkedin, bio, gender, mentor, mentee);
+    var newUser: User = new User(username, password, email, firstName, lastName, title, image, linkedin, bio, gender, mentor, mentee);
     console.log(newUser);
     this.userService.addUser(newUser);
     this.newUserForm.reset();
