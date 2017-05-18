@@ -16,6 +16,7 @@ Application platform where mentors and mentees can post their talents and needs 
   - [Usage](#usage)
     - [Database](#database)
   - [Known Bugs](#known-bugs)
+  - [Sources](#sources)
   - [Maintainer](#maintainer)
   - [Contribute](#contribute)
   - [License](#license)
@@ -96,6 +97,11 @@ export var masterFirebaseConfig = {
 3. UX/UI
   * Foundation was used as the page templates and animations.
 
+## Sources
+ * [Content about mentoring](http://www.apa.org/education/grad/mentoring.aspx)
+ * [Code for login and registration](http://jasonwatmore.com/post/2016/09/29/angular-2-user-registration-and-login-example-tutorial)
+ * [Home page image](http://www.changeboard.com/content/5121/mentoring-the-good-the-bad-and-the-ugly/)
+
 ## Maintainer
 [Grace Stuart](href="https://github.com/gstuart")
 
@@ -107,7 +113,7 @@ export var masterFirebaseConfig = {
 
 
 ## License
-**GLP License :copyright: 2017 _Grace Stuart_ **
+**_[MLP License](/LICENSE.md)_ :copyright: 2017 Grace Stuart **
 
 ***
 

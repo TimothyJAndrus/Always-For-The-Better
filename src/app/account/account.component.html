@@ -1,8 +1,20 @@
 <form [formGroup]="newUserForm" class="callout text-center">
   <h2>Become A Member</h2>
   <div class="floated-label-wrapper">
-    <label for="full-name">Full name</label>
-    <input #newName type="text" id="full-name" formControlName="name" required placeholder="Full Name">
+    <label for="firstName">First name</label>
+    <input #newFirstName type="text" id="firstName" formControlName="firstName" required placeholder="First Name">
+  </div>
+  <div class="floated-label-wrapper">
+    <label for="lastName">Last name</label>
+    <input #newLastName type="text" id="lastName" formControlName="lastName" required placeholder="Last Name">
+  </div>
+  <div class="floated-label-wrapper">
+    <label for="username">User name</label>
+    <input #newUsername type="text" id="username" formControlName="username" required placeholder="User name">
+  </div>
+  <div class="floated-label-wrapper">
+    <label for="password">Password</label>
+    <input #newPassword type="text" id="password" formControlName="password" required placeholder="Password">
   </div>
   <div class="floated-label-wrapper">
     <label for="title">Job Title</label>

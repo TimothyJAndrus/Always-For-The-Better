@@ -6,7 +6,8 @@
   </div>
   <div class="top-bar-right">
     <ul class="menu">
-    <li><a routerLink="join">Join</a></li>
+    <li><a routerLink="register">Join</a></li>
+    <li><a routerLink="login">Login</a></li>
     <li><a routerLink="account">Account</a><li>
     <li><a routerLink="mentors">Mentors</a></li>
     <li><a routerLink="mentees">Mentees</a></li>
@@ -15,10 +16,12 @@
   </div>
 </div>
 <div class='container'>
+  <app-alert></app-alert>
   <router-outlet></router-outlet>
 </div>
 <div class="row column" id="footer">
   <ul class="menu">
+    <li><a routerLink="login">Login</a></li>
     <li><a routerLink="join">Join</a></li>
     <li><a routerLink="mentors">Mentors</a></li>
     <li><a routerLink="mentees">Mentees</a></li>

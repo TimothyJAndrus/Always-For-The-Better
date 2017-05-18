@@ -15,7 +15,7 @@ export class UserService {
   }
 
   addUser(newUser: User) {
-    this.users.push(newUser);
+    return this.users.push(newUser);
   }
 
   getUserById(userId: string) {
@@ -24,7 +24,9 @@ export class UserService {
 
   updateUser(localUpdatedUser){
     var userEntryInFirebase = this.getUserById(localUpdatedUser.$key);
-    userEntryInFirebase.update({name: localUpdatedUser.name,
+    userEntryInFirebase.update({
+                                firstName: localUpdatedUser.firstName,
+                                lastName: localUpdatedUser.lastName,
                                 title: localUpdatedUser.title,
                                 image: localUpdatedUser.image,
                                 linkedin: localUpdatedUser.linkedin,
@@ -38,5 +40,4 @@ export class UserService {
     var userEntryInFirebase = this.getUserById(localUserToDelete.$key);
     userEntryInFirebase.remove();
   }
-
 }
