@@ -72,11 +72,11 @@ export var masterFirebaseConfig = {
 * :beetle:= S3
 * _See Issues for additional details._
 > :ant: User-Detail page: icons on bottom of card are non-functional.
-
+>
 > :ant: Account: anyone can access account. "As a logged in user, I would like to access my profile to edit and delete it so that as my experience and needs change they may be accurately reflected in my profile."
-
+>
 > :ant: Contact page: mail form is non-functional by design; it does not actually send an email.
-
+>
 > :beetle: Top Nav: Home link wrong color.
 
 ## Planning
