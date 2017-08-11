@@ -83,7 +83,21 @@ export var masterFirebaseConfig = {
 >
 > :ant: Contact page: mail form is non-functional by design; it does not actually send an email.
 >
-> :beetle: Top Nav: Home link wrong color.
+> :beetle: Top Nav: Home link wrong color, want it black.
+>
+> :bug: Join page: only email signup is functioning.
+>
+> :beetle: Join page: "or" circle is fixed to center of screen, not center of joining options.
+>
+> :beetle: Login page: error message is NOT pleasing or helpful.
+>
+> :beetle: Join page: Registration is successful message is NOT pleasing to look at.
+>
+> :bug: Login page: not sure if working correctly
+>
+> :beetle: can't tell if I am logged in or not
+>
+> :bug: Account page: need to remove edit information to its own page
 
 ## Planning
 1. Configuration/dependencies
