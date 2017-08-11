@@ -28,8 +28,13 @@ Application platform where mentors and mentees can post their talents and needs 
 
 You first will need the following things properly installed on your computer.
  * [Git](https://git-scm.com/)
- * [Node.js](https://nodejs.org/) (with NPM)
+ * [Node.js](https://nodejs.org/) (with NPM), verified by running `node -v` and `npm -v` in the Terminal.
  * [Bower](https://bower.io/)
+ * Angular
+  * To install: 
+      * enter `npm install angular`, then
+      * `bower install angular` in the Terminal.
+  * Verify installation by running `ng --version` in the Terminal.
 
 With the above items installed you may now do the following in your terminal:
  * `git clone https://github.com/gstuart/Always-For-The-Better`
@@ -67,8 +72,8 @@ export var masterFirebaseConfig = {
 ```
 
 ## Known Bugs
-* :bug:= S1 
-* :ant:= S2 
+* :bug:= S1
+* :ant:= S2
 * :beetle:= S3
 * _See Issues for additional details._
 > :ant: User-Detail page: icons on bottom of card are non-functional.
