@@ -31,7 +31,7 @@ You first will need the following things properly installed on your computer.
  * [Node.js](https://nodejs.org/) (with NPM), verified by running `node -v` and `npm -v` in the Terminal.
  * [Bower](https://bower.io/)
  * Angular
-  * To install: 
+  * To install:
       * enter `npm install angular`, then
       * `bower install angular` in the Terminal.
   * Verify installation by running `ng --version` in the Terminal.
@@ -55,6 +55,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Usage
 * **Option One:** visit [Always For The Better](https://always-for-the-better.firebaseapp.com)
 * **Option Two:**
+  * Add api-keys following instructions in the Database section below
   * `ng serve`
   * :eyes: app at [http://localhost:4200](http://localhost:4200) :tada:
 
