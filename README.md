@@ -4,7 +4,7 @@
 ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
 
 ## Short Description
-> Epicodus Javascript Project using AngularJS, Node.js, JavaScript, NPM, Foundation, Firebase, CSS, SCSS, and good ol' HTML. [View Site](https://always-for-the-better.firebaseapp.com)
+> Epicodus Javascript Project using AngularJS (2), Node.js, JavaScript, NPM, Foundation, Firebase, CSS, SCSS, and good ol' HTML. [View Site](https://always-for-the-better.firebaseapp.com)
 
 ## Long Description
 Application platform where mentors and mentees can post their talents and needs so they can connect. The project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
@@ -51,6 +51,10 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ### Running end-to-end tests
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
  Before running the tests make sure you are serving the app via `ng serve`.
+
+### Deploying on Firebase After Making Changes
+* Create a production build with `ng build --prod`
+*
 
 ## Usage
 * **Option One:** visit [Always For The Better](https://always-for-the-better.firebaseapp.com)
